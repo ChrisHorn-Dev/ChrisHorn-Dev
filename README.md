@@ -1,7 +1,7 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Full-stack developer building production SaaS platforms, operational tools, and modern web applications.
+Full-stack developer building SaaS platforms, developer tools, and modern web applications.
 </p>
 
 <p align="center">
@@ -20,6 +20,51 @@ I enjoy building software that supports real business workflows and helping team
 
 <br>
 
+# Featured Projects
+
+<table>
+<tr>
+<td width="50%">
+
+### Physician Connection Platform
+
+Production SaaS platform connecting pharmaceutical representatives with physician practices to coordinate scheduling, hosted meetings, and approval workflows.
+
+Key areas of work:
+
+- Representative appointment request workflows  
+- Role-based dashboards for physicians, representatives, and practice administrators  
+- Authentication architecture and protected route system  
+- Calendar scheduling and visit management  
+- Stabilizing core workflows as the product progressed toward MVP readiness  
+
+→ **[View Case Study](https://github.com/ChrisHorn-Dev/case-studies)**
+
+</td>
+
+<td width="50%">
+
+### Media Authenticity API
+
+Experimental verification-oriented API for analyzing media authenticity.
+
+The system currently accepts uploaded images and returns structured authenticity analysis results, including signed metadata that can be validated through a verification endpoint.
+
+Core capabilities include:
+
+- Single-image and batch analysis endpoints  
+- File hashing and TTL caching  
+- Signed analysis responses (analysis_id, timestamp, HMAC signature)  
+- Verification endpoint for validating response integrity  
+
+→ **[View Repository](https://github.com/ChrisHorn-Dev/media-auth-api)**
+
+</td>
+</tr>
+</table>
+
+<br>
+
 # Physician Connection Platform
 
 Production SaaS platform connecting pharmaceutical representatives with physician practices to coordinate scheduling, hosted meetings, and approval workflows.
@@ -30,11 +75,11 @@ Production SaaS platform connecting pharmaceutical representatives with physicia
 
 ### Key Contributions
 
-- Representative appointment request workflows
-- Role-based dashboards for physicians, representatives, and practice administrators
-- Authentication architecture and protected route system
-- Calendar scheduling and visit management
-- Refining core product workflows as the platform progressed toward MVP readiness
+- Representative appointment request workflows  
+- Role-based dashboards for physicians, representatives, and practice administrators  
+- Authentication architecture and protected route system  
+- Calendar scheduling and visit management  
+- Refining core product workflows as the platform progressed toward MVP readiness  
 
 <br>
 
@@ -44,7 +89,7 @@ Production SaaS platform connecting pharmaceutical representatives with physicia
 
 ## About
 
-I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, and internal tools built with React and Next.js.
+I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, developer tools, and internal applications built with React and Next.js.
 
 I enjoy contributing to products as they evolve — improving architecture, refining workflows, and strengthening the user experience as systems move toward reliable production use.
 
@@ -79,6 +124,16 @@ Outside of development, I enjoy playing guitar and singing for people, traveling
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisHorn-Dev&layout=compact&theme=transparent"/>
 </p>
+
+<br>
+
+# Experimental Work
+
+In addition to client and production work, I build experimental projects that explore new technical ideas and infrastructure patterns.
+
+These projects often focus on API design, verification systems, and developer tooling.
+
+→ **[Media Authenticity API](https://github.com/ChrisHorn-Dev/media-auth-api)**
 
 <br>
 
