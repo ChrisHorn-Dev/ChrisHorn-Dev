@@ -2,7 +2,7 @@
 
 Full-stack developer focused on building production SaaS platforms, operational tools, and modern web applications.
 
-I enjoy working on products that support real business workflows and helping teams move software toward stable, production-ready systems.
+I enjoy building software that supports real business workflows and helping teams move products toward stable, production-ready systems.
 
 ---
 
@@ -16,19 +16,19 @@ Production SaaS platform connecting pharmaceutical representatives with physicia
 
 Areas I contributed to included:
 
-- Representative appointment request workflows
-- Role-based dashboards for physicians, representatives, and practice administrators
-- Authentication and protected route architecture
-- Calendar scheduling and visit management
-- Supporting and refining core product workflows as the platform moved toward MVP readiness
+- Representative appointment request workflows  
+- Role-based dashboards for physicians, representatives, and practice administrators  
+- Authentication and protected route architecture  
+- Calendar scheduling and visit management  
+- Refining core product workflows as the platform progressed toward MVP readiness  
 
 ---
 
 ## About
 
-I focus on building practical software that supports real-world operational workflows. Much of my work centers around SaaS platforms, scheduling systems, and internal tools built with React and Next.js.
+I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, and internal tools built with React and Next.js.
 
-I enjoy working on products as they evolve and contributing to improvements in architecture, workflow design, and overall user experience as systems move toward production use.
+I enjoy contributing to products as they evolve—improving architecture, refining workflows, and strengthening the user experience as systems move toward reliable production use.
 
 Outside of development, I enjoy playing guitar and singing for people, traveling whenever I get the chance, and unwinding with video games.
 
@@ -45,9 +45,7 @@ Outside of development, I enjoy playing guitar and singing for people, traveling
 
 ---
 
-## GitHub Stats
-
-![Chris's GitHub stats](https://github-readme-stats.vercel.app/api?username=ChrisHorn-Dev&show_icons=true&theme=transparent)
+## GitHub Overview
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisHorn-Dev&layout=compact&theme=transparent)
 
