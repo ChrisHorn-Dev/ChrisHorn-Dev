@@ -1,7 +1,7 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Full-stack developer building SaaS platforms, developer tools, and modern web applications.
+Full-stack developer building SaaS platforms, APIs, and developer tools.
 </p>
 
 <p align="center">
@@ -22,15 +22,13 @@ I enjoy building software that supports real business workflows and helping team
 
 # Featured Projects
 
-<table>
-<tr>
-<td width="50%">
-
-### Physician Connection Platform
+## Physician Connection Platform
 
 Production SaaS platform connecting pharmaceutical representatives with physician practices to coordinate scheduling, hosted meetings, and approval workflows.
 
-Key areas of work:
+`Next.js` `React` `TypeScript` `Node.js`
+
+**Key areas of work**
 
 - Representative appointment request workflows  
 - Role-based dashboards for physicians, representatives, and practice administrators  
@@ -40,28 +38,25 @@ Key areas of work:
 
 → **[View Case Study](https://github.com/ChrisHorn-Dev/case-studies)**
 
-</td>
+---
 
-<td width="50%">
+## Media Authenticity API
 
-### Media Authenticity API
+Verification-oriented API for analyzing media authenticity.
 
-Experimental verification-oriented API for analyzing media authenticity.
+The system analyzes uploaded images and returns structured authenticity results with signed metadata that can be independently verified through a verification endpoint.
 
-The system currently accepts uploaded images and returns structured authenticity analysis results, including signed metadata that can be validated through a verification endpoint.
+`Next.js` `TypeScript` `Node.js`
 
-Core capabilities include:
+**Core capabilities**
 
 - Single-image and batch analysis endpoints  
+- Detector abstraction supporting multiple models  
+- Optional ensemble analysis across detectors  
 - File hashing and TTL caching  
-- Signed analysis responses (analysis_id, timestamp, HMAC signature)  
-- Verification endpoint for validating response integrity  
+- Signed analysis responses and verification endpoint  
 
 → **[View Repository](https://github.com/ChrisHorn-Dev/media-auth-api)**
-
-</td>
-</tr>
-</table>
 
 <br>
 
@@ -89,9 +84,9 @@ Production SaaS platform connecting pharmaceutical representatives with physicia
 
 ## About
 
-I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, developer tools, and internal applications built with React and Next.js.
+I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, APIs, and developer tools built with React, Next.js, and TypeScript.
 
-I enjoy contributing to products as they evolve — improving architecture, refining workflows, and strengthening the user experience as systems move toward reliable production use.
+I enjoy contributing to products as they evolve — improving architecture, refining workflows, and strengthening reliability as systems move toward stable production use.
 
 Outside of development, I enjoy playing guitar and singing for people, traveling whenever I get the chance, and unwinding with video games.
 
