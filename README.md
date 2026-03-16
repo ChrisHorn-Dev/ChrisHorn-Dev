@@ -1,16 +1,13 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Full-stack developer building SaaS platforms, APIs, and developer tools.
+Full-stack product engineer building SaaS platforms, verification APIs, and desktop-style frontend systems with Next.js and TypeScript.
 </p>
 
 <p align="center">
-I enjoy building software that supports real business workflows and helping teams move products toward stable, production-ready systems.
-</p>
-
-<p align="center">
-<a href="https://chrisos.dev">Portfolio</a> •
+<a href="https://chrisos.dev">Portfolio (ChrisOS)</a> •
 <a href="https://github.com/ChrisHorn-Dev/case-studies">Case Studies</a> •
+<a href="https://github.com/ChrisHorn-Dev/media-auth-api">Media Authenticity API</a> •
 <a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a>
 </p>
 
@@ -20,140 +17,85 @@ I enjoy building software that supports real business workflows and helping team
 
 <br>
 
-# Featured Projects
+# Featured Work
 
 ## Physician Connection Platform
 
-Production SaaS platform connecting pharmaceutical representatives with physician practices to coordinate scheduling, hosted meetings, and approval workflows.
+Modular Next.js SaaS application connecting pharmaceutical representatives and physician practices through role-based dashboards, scheduling workflows, and operational tooling.
 
-`Next.js` `React` `TypeScript` `Node.js`
+`Next.js` `React` `TypeScript` `Drizzle ORM`
 
 **Key areas of work**
 
-- Representative appointment request workflows  
-- Role-based dashboards for physicians, representatives, and practice administrators  
-- Authentication architecture and protected route system  
-- Calendar scheduling and visit management  
-- Stabilizing core workflows as the product progressed toward MVP readiness  
+- Role-partitioned application surfaces for representatives, practice staff, physicians, and super-admins  
+- Cal.com-backed rep–practice scheduling workflows with calendar domain modules  
+- Messaging and coordination surfaces around visits and practice access  
+- Authentication architecture and protected routes across multi-role access  
+- Operational/admin tooling used for test data seeding and debugging as the platform moved toward MVP readiness  
 
-→ **[View Case Study](https://github.com/ChrisHorn-Dev/case-studies)**
+→ **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
 
 ---
 
 ## Media Authenticity API
 
-Verification-oriented API for analyzing media authenticity.
-
-The system analyzes uploaded images and returns structured authenticity results with signed metadata that can be independently verified through a verification endpoint.
+Verification API that analyzes uploaded images for likely synthetic vs authentic media and returns structured, HMAC-signed authenticity records with a verification endpoint.
 
 `Next.js` `TypeScript` `Node.js`
 
 **Core capabilities**
 
-- Single-image and batch analysis endpoints  
-- Detector abstraction supporting multiple models  
-- Optional ensemble analysis across detectors  
-- File hashing and TTL caching  
-- Signed analysis responses and verification endpoint  
+- Detector-driven analysis pipeline supporting single and ensemble modes  
+- File-hash caching with optional file-backed persistence  
+- HMAC-signed authenticity responses and a `POST /api/verify` validation endpoint  
+- In-memory rate limiting and optional API key enforcement  
+- Tests covering core analysis and verification behavior  
 
-→ **[View Repository](https://github.com/ChrisHorn-Dev/media-auth-api)**
+→ **[View repository](https://github.com/ChrisHorn-Dev/media-auth-api)**
+
+---
+
+## ChrisOS (Resume OS)
+
+OS-inspired, desktop-style portfolio shell built as a browser-based workspace.  
+Projects, resume, and engineering deep dives run as windowed apps with a shared window system.
+
+`Next.js` `TypeScript` `Tailwind CSS` `Zustand` `Framer Motion`
+
+**Architecture highlights**
+
+- Desktop shell with window manager, dock, launcher, and menu bar  
+- Mobile shell with launcher, app chrome, and system bar  
+- Shared window/app state with payload-driven navigation  
+- Terminal interface wired into the same application model  
+- Structured deep-dive content system for project architecture exploration  
+
+→ **[Open ChrisOS](https://chrisos.dev)** • **[View repository](https://github.com/ChrisHorn-Dev/resume-os)**
+
+---
 
 <br>
 
-# Physician Connection Platform
+# About
 
-Production SaaS platform connecting pharmaceutical representatives with physician practices to coordinate scheduling, hosted meetings, and approval workflows.
-
-<p align="center">
-  <img src="./images/physician-connection-preview.png" width="950" alt="Physician Connection Platform Dashboard"/>
-</p>
-
-### Key Contributions
-
-- Representative appointment request workflows  
-- Role-based dashboards for physicians, representatives, and practice administrators  
-- Authentication architecture and protected route system  
-- Calendar scheduling and visit management  
-- Refining core product workflows as the platform progressed toward MVP readiness  
-
-<br>
-
-<table>
-<tr>
-<td width="55%">
-
-## About
-
-I focus on building practical software that supports real operational workflows. Much of my work centers around SaaS platforms, scheduling systems, APIs, and developer tools built with React, Next.js, and TypeScript.
+I focus on building software that supports real operational workflows: SaaS platforms, scheduling systems, verification APIs, and developer tools.
 
 I enjoy contributing to products as they evolve — improving architecture, refining workflows, and strengthening reliability as systems move toward stable production use.
 
-Outside of development, I enjoy playing guitar and singing for people, traveling whenever I get the chance, and unwinding with video games.
-
-</td>
-
-<td width="45%">
-
-## Tech Stack
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
-
-![React](https://img.shields.io/badge/React-000000?style=flat&logo=react&logoColor=white)
-
-![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=flat&logo=typescript&logoColor=white)
-
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-000000?style=flat&logo=tailwindcss&logoColor=white)
-
-![Node.js](https://img.shields.io/badge/Node.js-000000?style=flat&logo=node.js&logoColor=white)
-
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-
-</td>
-</tr>
-</table>
-
 <br>
 
-# GitHub Overview
+# Tech Stack
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisHorn-Dev&layout=compact&theme=transparent"/>
-</p>
-
-<br>
-
-# Experimental Work
-
-In addition to client and production work, I build experimental projects that explore new technical ideas and infrastructure patterns.
-
-These projects often focus on API design, verification systems, and developer tooling.
-
-→ **[Media Authenticity API](https://github.com/ChrisHorn-Dev/media-auth-api)**
-
-<br>
-
-# Additional Work
-
-Some systems I contribute to are private or employer-owned, so source code cannot always be shared publicly.
-
-Selected case studies describing my work and technical contributions can be found here:
-
-→ **[Case Studies](https://github.com/ChrisHorn-Dev/case-studies)**
-
-<br>
-
-# ChrisOS
-
-Experimental developer portfolio exploring OS-style navigation patterns and interactive UI design.
-
-<p align="center">
-  <a href="https://chrisos.dev">
-    <img src="./images/chrisos-preview.png" width="900" alt="ChrisOS Interface"/>
-  </a>
-</p>
+`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS` · `PostgreSQL` · `Drizzle ORM` · `Vercel`
 
 <br>
 
 # Connect
 
-Always happy to talk about SaaS products, software architecture, and interesting technical challenges.
+Always happy to talk about SaaS products, APIs, and interesting engineering problems.
+
+<p>
+<a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a> •
+<a href="https://chrisos.dev">Portfolio</a> •
+<a href="https://github.com/ChrisHorn-Dev/media-auth-api">Media Authenticity API</a>
+</p>
