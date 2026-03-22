@@ -1,7 +1,7 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Full-stack product engineer building SaaS platforms, verification APIs, and desktop-style frontend systems with Next.js and TypeScript.
+Full-stack engineer building SaaS platforms, operational systems, and verification APIs with Next.js and TypeScript.
 </p>
 
 <p align="center">
@@ -21,33 +21,50 @@ Full-stack product engineer building SaaS platforms, verification APIs, and desk
 
 ## Physician Connection Platform
 
-Modular Next.js SaaS application connecting pharmaceutical representatives and physician practices through role-based dashboards, scheduling workflows, and operational tooling.
+Multi-role SaaS platform for rep–practice appointment coordination, scheduling, and operational workflows in a healthcare setting.
 
-`Next.js` `React` `TypeScript` `Drizzle ORM`
+`Next.js` · `React` · `TypeScript` · `Drizzle ORM`
 
 **Key areas of work**
 
-- Role-partitioned application surfaces for representatives, practice staff, physicians, and super-admins  
-- Cal.com-backed rep–practice scheduling workflows with calendar domain modules  
-- Messaging and coordination surfaces around visits and practice access  
+- Role-partitioned system spanning representatives, practice staff, physicians, and super-admins  
+- Cal.com-backed scheduling workflows with domain-specific calendar behavior  
+- Rep request flows and practice-side lifecycle visibility across dashboards and calendars  
 - Authentication architecture and protected routes across multi-role access  
-- Operational/admin tooling used for test data seeding and debugging as the platform moved toward MVP readiness  
+- Operational tooling for seeding, debugging, and supporting MVP-ready deployment  
 
 → **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
 
 ---
 
+## Elite Touch Cleaning — Client & Operations Portal
+
+Service operations system for a commercial cleaning business: structured client requests, emergency handling, and operational visibility.
+
+`Next.js` · `React` · `TypeScript` · `Prisma` · `Twilio` · `Resend`
+
+**Key areas of work**
+
+- Typed request lifecycle (issues, notes, supplies) with threaded messages, attachments, and status tracking  
+- Dedicated SOS path with emergency priority and broadcast notification pipeline (SMS + email)  
+- Admin triage interface with filtered queues, request detail views, and notification history  
+- Manual SMS check-in system and admin-triggered HubSpot contact sync  
+
+→ **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)**
+
+---
+
 ## Media Authenticity API
 
-Verification API that analyzes uploaded images for likely synthetic vs authentic media and returns structured, HMAC-signed authenticity records with a verification endpoint.
+Verification API for analyzing uploaded images and returning structured, signed authenticity records.
 
-`Next.js` `TypeScript` `Node.js`
+`Next.js` · `TypeScript` · `Node.js`
 
 **Core capabilities**
 
 - Detector-driven analysis pipeline supporting single and ensemble modes  
-- File-hash caching with optional file-backed persistence  
-- HMAC-signed authenticity responses and a `POST /api/verify` validation endpoint  
+- File-hash caching with optional persistence  
+- HMAC-signed authenticity responses with a verification endpoint (`POST /api/verify`)  
 - In-memory rate limiting and optional API key enforcement  
 - Tests covering core analysis and verification behavior  
 
@@ -57,18 +74,17 @@ Verification API that analyzes uploaded images for likely synthetic vs authentic
 
 ## ChrisOS (Resume OS)
 
-OS-inspired, desktop-style portfolio shell built as a browser-based workspace.  
-Projects, resume, and engineering deep dives run as windowed apps with a shared window system.
+Desktop-style portfolio system built as a browser-based workspace with windowed applications and shared state.
 
-`Next.js` `TypeScript` `Tailwind CSS` `Zustand` `Framer Motion`
+`Next.js` · `TypeScript` · `Tailwind CSS` · `Zustand` · `Framer Motion`
 
 **Architecture highlights**
 
-- Desktop shell with window manager, dock, launcher, and menu bar  
-- Mobile shell with launcher, app chrome, and system bar  
-- Shared window/app state with payload-driven navigation  
-- Terminal interface wired into the same application model  
-- Structured deep-dive content system for project architecture exploration  
+- Window manager with dock, launcher, menu bar, and multi-window coordination  
+- Mobile shell with adapted navigation and app chrome  
+- Shared state model for window lifecycle and payload-driven navigation  
+- Terminal interface integrated into the same application model  
+- Structured content system for project deep dives and documentation  
 
 → **[Open ChrisOS](https://chrisos.dev)** • **[View repository](https://github.com/ChrisHorn-Dev/resume-os)**
 
@@ -78,21 +94,21 @@ Projects, resume, and engineering deep dives run as windowed apps with a shared 
 
 # About
 
-I focus on building software that supports real operational workflows: SaaS platforms, scheduling systems, verification APIs, and developer tools.
+I build software that supports real operational workflows — SaaS platforms, scheduling systems, and internal tools used by actual teams.
 
-I enjoy contributing to products as they evolve — improving architecture, refining workflows, and strengthening reliability as systems move toward stable production use.
+My work focuses on making systems clearer and more reliable as they move from early builds toward production use: refining workflows, strengthening architecture, and reducing ambiguity in how software behaves.
 
 <br>
 
 # Tech Stack
 
-`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS` · `PostgreSQL` · `Drizzle ORM` · `Vercel`
+`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS` · `PostgreSQL` · `Prisma` · `Drizzle ORM` · `Vercel`
 
 <br>
 
 # Connect
 
-Always happy to talk about SaaS products, APIs, and interesting engineering problems.
+Always happy to talk about SaaS systems, APIs, and product engineering.
 
 <p>
 <a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a> •
