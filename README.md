@@ -1,7 +1,7 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Full-stack engineer building SaaS platforms, operational systems, and verification APIs with Next.js and TypeScript.
+Engineer focused on building and stabilizing real-world SaaS systems — taking products from early builds to production-ready through debugging, system design, and operational hardening.
 </p>
 
 <p align="center">
@@ -21,17 +21,27 @@ Full-stack engineer building SaaS platforms, operational systems, and verificati
 
 ## Physician Connection Platform
 
-Multi-role SaaS platform for rep–practice appointment coordination, scheduling, and operational workflows in a healthcare setting.
+Multi-tenant SaaS platform for rep–practice appointment coordination, scheduling, and operational workflows in a healthcare setting.  
+*Source private; detailed technical write-up available in case study.*
 
-`Next.js` · `React` · `TypeScript` · `Drizzle ORM`
+`Next.js` · `React` · `TypeScript` · `Drizzle ORM` · `PostgreSQL` · `Vercel` · `Railway` · `Better Auth` · `Cal.com`
 
-**Key areas of work**
+**System scope**
 
-- Role-partitioned system spanning representatives, practice staff, physicians, and super-admins  
+- Multi-role architecture spanning representatives, practice staff, physicians, and super-admins  
 - Cal.com-backed scheduling workflows with domain-specific calendar behavior  
-- Rep request flows and practice-side lifecycle visibility across dashboards and calendars  
-- Authentication architecture and protected routes across multi-role access  
-- Operational tooling for seeding, debugging, and supporting MVP-ready deployment  
+- Rep request pipeline with lifecycle visibility across dashboards and calendars  
+- Authentication and authorization across role-partitioned system boundaries  
+- Internal operational tooling for onboarding, debugging, and system support  
+
+**Production hardening & stabilization**
+
+- Resolved failures from using Drizzle’s `transaction()` API with Neon’s HTTP driver, which does not support interactive transactions — refactored to sequential writes with failure-safe cleanup  
+- Fixed broken server-side authentication flows and enforced session validation across critical mutations  
+- Strengthened role-based access boundaries across server actions and admin operations  
+- Added Sentry error capture on critical server paths (e.g. user provisioning, practice setup, Cal proxy failures)  
+- Stabilized booking and scheduling flows dependent on external systems (Cal.com)  
+- Brought the platform from unstable production behavior → controlled beta readiness  
 
 → **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
 
@@ -39,16 +49,16 @@ Multi-role SaaS platform for rep–practice appointment coordination, scheduling
 
 ## Elite Touch Cleaning — Client & Operations Portal
 
-Service operations system for a commercial cleaning business: structured client requests, emergency handling, and operational visibility.
+Service operations system for a commercial cleaning business, supporting structured requests, emergency handling, and operational visibility.
 
 `Next.js` · `React` · `TypeScript` · `Prisma` · `Twilio` · `Resend`
 
 **Key areas of work**
 
-- Typed request lifecycle (issues, notes, supplies) with threaded messages, attachments, and status tracking  
-- Dedicated SOS path with emergency priority and broadcast notification pipeline (SMS + email)  
-- Admin triage interface with filtered queues, request detail views, and notification history  
-- Manual SMS check-in system and admin-triggered HubSpot contact sync  
+- Typed request lifecycle (issues, notes, supplies) with threaded messaging, attachments, and status tracking  
+- Emergency (SOS) workflow with priority escalation and broadcast notification pipeline (SMS + email)  
+- Admin triage interface with filtered queues, request detail views, and operational visibility  
+- Manual SMS check-in system and admin-triggered HubSpot contact synchronization  
 
 → **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)**
 
@@ -64,7 +74,7 @@ Verification API for analyzing uploaded images and returning structured, signed 
 
 - Detector-driven analysis pipeline supporting single and ensemble modes  
 - File-hash caching with optional persistence  
-- HMAC-signed authenticity responses with a verification endpoint (`POST /api/verify`)  
+- HMAC-signed authenticity responses with verification endpoint (`POST /api/verify`)  
 - In-memory rate limiting and optional API key enforcement  
 - Tests covering core analysis and verification behavior  
 
@@ -81,7 +91,7 @@ Desktop-style portfolio system built as a browser-based workspace with windowed 
 **Architecture highlights**
 
 - Window manager with dock, launcher, menu bar, and multi-window coordination  
-- Mobile shell with adapted navigation and app chrome  
+- Mobile-adapted shell with responsive navigation and app structure  
 - Shared state model for window lifecycle and payload-driven navigation  
 - Terminal interface integrated into the same application model  
 - Structured content system for project deep dives and documentation  
@@ -96,15 +106,18 @@ Desktop-style portfolio system built as a browser-based workspace with windowed 
 
 I build software that supports real operational workflows — SaaS platforms, scheduling systems, and internal tools used by actual teams.
 
-My work focuses on making systems clearer and more reliable as they move from early builds toward production use: refining workflows, strengthening architecture, and reducing ambiguity in how software behaves.
+My work focuses on taking systems from early builds to production-ready: diagnosing failures, tightening architecture, and making behavior predictable under real-world conditions.
 
-<br>
+I’m particularly interested in product engineering at the system level — where application logic, infrastructure constraints, and real user workflows intersect.
+
+---
 
 # Tech Stack
 
-`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS` · `PostgreSQL` · `Prisma` · `Drizzle ORM` · `Vercel`
+`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS`  
+`PostgreSQL` · `Prisma` · `Drizzle ORM` · `Vercel`
 
-<br>
+---
 
 # Connect
 
