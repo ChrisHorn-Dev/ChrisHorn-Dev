@@ -1,7 +1,7 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Engineer focused on building and stabilizing real-world SaaS systems — taking products from early builds to production-ready through debugging, system design, and operational hardening.
+Product-minded full-stack engineer building SaaS platforms, operational systems, and workflow software.
 </p>
 
 <p align="center">
@@ -17,114 +17,126 @@ Engineer focused on building and stabilizing real-world SaaS systems — taking 
 
 <br>
 
-# Featured Work
+# Current focus
 
-## Physician Connection Platform
+- **SiteOS** — construction execution intelligence platform (FastAPI, workers, dashboards, mobile)
+- **Production SaaS stabilization** — healthcare scheduling, client ops portals, integrations
+- **Public proof** — architecture case studies + interactive portfolio at [chrisos.dev](https://chrisos.dev)
 
-Multi-tenant SaaS platform for rep–practice appointment coordination, scheduling, and operational workflows in a healthcare setting.  
-*Source private; detailed technical write-up available in case study.*
+<br>
 
-`Next.js` · `React` · `TypeScript` · `Drizzle ORM` · `PostgreSQL` · `Vercel` · `Railway` · `Better Auth` · `Cal.com`
+# Featured work
 
-**System scope**
+## Physician Connection
 
-- Multi-role architecture spanning representatives, practice staff, physicians, and super-admins  
-- Cal.com-backed scheduling workflows with domain-specific calendar behavior  
-- Rep request pipeline with lifecycle visibility across dashboards and calendars  
-- Authentication and authorization across role-partitioned system boundaries  
-- Internal operational tooling for onboarding, debugging, and system support  
+Multi-tenant healthcare SaaS for rep–practice appointment coordination, scheduling, and operational workflows.
 
-**Production hardening & stabilization**
+`Next.js` · `TypeScript` · `Drizzle ORM` · `Better Auth` · `Cal.com` · `PostgreSQL (Neon)` · `Vercel` · `Railway`
 
-- Resolved failures from using Drizzle’s `transaction()` API with Neon’s HTTP driver, which does not support interactive transactions — refactored to sequential writes with failure-safe cleanup  
-- Fixed broken server-side authentication flows and enforced session validation across critical mutations  
-- Strengthened role-based access boundaries across server actions and admin operations  
-- Added Sentry error capture on critical server paths (e.g. user provisioning, practice setup, Cal proxy failures)  
-- Stabilized booking and scheduling flows dependent on external systems (Cal.com)  
-- Brought the platform from unstable production behavior → controlled beta readiness  
+**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
 
-→ **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
+Production hardening: Neon/Drizzle transaction fixes, auth boundaries, Cal.com stabilization, Oracle → Vercel/Railway migration.
+
+---
+
+## SiteOS — Construction Intelligence Platform
+
+Full-stack platform for construction execution intelligence — field signals to executive dashboards.
+
+`FastAPI` · `Celery` · `PostgreSQL` · `TimescaleDB` · `Next.js` · `Expo` · `ML/CV` · `Claude API`
+
+**Private repo** · **Case study pending polish →** [draft](https://github.com/ChrisHorn-Dev/case-studies/blob/main/siteos.md)
+
+Related: `siteos-signal-engine` (county-level signal foundation).
 
 ---
 
 ## Elite Touch Cleaning — Client & Operations Portal
 
-Service operations system for a commercial cleaning business, supporting structured requests, emergency handling, and operational visibility.
+Client companion app + admin ops layer for commercial cleaning: typed requests, SOS path, Twilio/Resend notifications, HubSpot sync.
 
-`Next.js` · `React` · `TypeScript` · `Prisma` · `Twilio` · `Resend`
+`Next.js` · `Prisma` · `Twilio` · `Resend` · `HubSpot`
 
-**Key areas of work**
+**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)**
 
-- Typed request lifecycle (issues, notes, supplies) with threaded messaging, attachments, and status tracking  
-- Emergency (SOS) workflow with priority escalation and broadcast notification pipeline (SMS + email)  
-- Admin triage interface with filtered queues, request detail views, and operational visibility  
-- Manual SMS check-in system and admin-triggered HubSpot contact synchronization  
+Companion to **Elite Touch Proposal App** (internal scope-of-work + PDF generator, private repo).
 
-→ **[Read the case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)**
+---
+
+## Regen Profits Sales App
+
+Mobile-first sales tracking PWA for reps and admin oversight.
+
+`Next.js` · `Supabase` · `PWA` · `Tailwind CSS`
+
+**Private repo** · **Case study draft →** [regen-profits-sales-app.md](https://github.com/ChrisHorn-Dev/case-studies/blob/main/regen-profits-sales-app.md) · Staging: [regen-profits-sales-app.vercel.app](https://regen-profits-sales-app.vercel.app)
+
+---
+
+## Remember Me
+
+Relationship-driven gifting MVP — wishlists, reminders, events, Thinking of You drafts (Phase 1, honest scope).
+
+`Next.js` · `Supabase` · `TypeScript`
+
+**Private repo** · **Case study draft →** [remember-me.md](https://github.com/ChrisHorn-Dev/case-studies/blob/main/remember-me.md)
+
+---
+
+## Cape Fear Web Co
+
+Studio site + Supabase client delivery portal for operational software engagements.
+
+`Vite` · `React` · `Supabase` · `Vercel` · Live: [capefearweb.co](https://capefearweb.co)
+
+**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/cape-fear-web-co.md)**
 
 ---
 
 ## Media Authenticity API
 
-Verification API for analyzing uploaded images and returning structured, signed authenticity records.
+Signed image authenticity API with detector-based analysis and verification endpoint.
 
-`Next.js` · `TypeScript` · `Node.js`
+`Next.js` · `TypeScript` · `Hugging Face`
 
-**Core capabilities**
-
-- Detector-driven analysis pipeline supporting single and ensemble modes  
-- File-hash caching with optional persistence  
-- HMAC-signed authenticity responses with verification endpoint (`POST /api/verify`)  
-- In-memory rate limiting and optional API key enforcement  
-- Tests covering core analysis and verification behavior  
-
-→ **[View repository](https://github.com/ChrisHorn-Dev/media-auth-api)**
+**[Public repo →](https://github.com/ChrisHorn-Dev/media-auth-api)** · [Case study overview](https://github.com/ChrisHorn-Dev/case-studies/blob/main/media-auth-api.md)
 
 ---
 
-## ChrisOS (Resume OS)
+## ChrisOS
 
-Desktop-style portfolio system built as a browser-based workspace with windowed applications and shared state.
+Desktop-style interactive portfolio — windowed project workspace, terminal, mobile shell.
 
-`Next.js` · `TypeScript` · `Tailwind CSS` · `Zustand` · `Framer Motion`
+`Next.js` · `Zustand` · `Framer Motion`
 
-**Architecture highlights**
-
-- Window manager with dock, launcher, menu bar, and multi-window coordination  
-- Mobile-adapted shell with responsive navigation and app structure  
-- Shared state model for window lifecycle and payload-driven navigation  
-- Terminal interface integrated into the same application model  
-- Structured content system for project deep dives and documentation  
-
-→ **[Open ChrisOS](https://chrisos.dev)** • **[View repository](https://github.com/ChrisHorn-Dev/resume-os)**
-
----
+**[Live →](https://chrisos.dev)** · **[Public repo →](https://github.com/ChrisHorn-Dev/resume-os)**
 
 <br>
 
-# About
+# Private work, public proof
 
-I build software that supports real operational workflows — SaaS platforms, scheduling systems, and internal tools used by actual teams.
+A lot of my strongest work is **private or client-sensitive**, so I publish **architecture-focused case studies** that explain product decisions, system design, tradeoffs, and implementation details — without exposing confidential code or data.
 
-My work focuses on taking systems from early builds to production-ready: diagnosing failures, tightening architecture, and making behavior predictable under real-world conditions.
+→ **[All case studies](https://github.com/ChrisHorn-Dev/case-studies)**
 
-I’m particularly interested in product engineering at the system level — where application logic, infrastructure constraints, and real user workflows intersect.
+<br>
 
----
+# Stack
 
-# Tech Stack
+**Frontend:** Next.js · React · TypeScript · Tailwind CSS · Vite  
+**Backend:** FastAPI · Node.js · Celery · REST APIs  
+**Data:** PostgreSQL · Neon · Prisma · Drizzle ORM · Supabase  
+**Integrations:** Cal.com · Twilio · Resend · HubSpot · Stripe · Hugging Face  
+**Infra:** Vercel · Railway · Docker · Sentry  
 
-`Next.js` · `React` · `TypeScript` · `Node.js` · `Tailwind CSS`  
-`PostgreSQL` · `Prisma` · `Drizzle ORM` · `Vercel`
-
----
+<br>
 
 # Connect
 
-Always happy to talk about SaaS systems, APIs, and product engineering.
+Always happy to talk about SaaS systems, operational software, and product engineering.
 
 <p>
 <a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a> •
-<a href="https://chrisos.dev">Portfolio</a> •
-<a href="https://github.com/ChrisHorn-Dev/media-auth-api">Media Authenticity API</a>
+<a href="https://chrisos.dev">ChrisOS</a> •
+<a href="https://github.com/ChrisHorn-Dev/case-studies">Case Studies</a>
 </p>
