@@ -1,13 +1,13 @@
 <h1 align="center">Chris Horn</h1>
 
 <p align="center">
-Product-minded full-stack engineer building SaaS platforms, operational systems, and workflow software.
+Full-stack developer. I build web apps, client portals, and the backend/workflow pieces around them.
 </p>
 
 <p align="center">
-<a href="https://chrisos.dev">Portfolio (ChrisOS)</a> •
-<a href="https://github.com/ChrisHorn-Dev/case-studies">Case Studies</a> •
-<a href="https://github.com/ChrisHorn-Dev/media-auth-api">Media Authenticity API</a> •
+<a href="https://chrisos.dev">ChrisOS</a> ·
+<a href="https://github.com/ChrisHorn-Dev/case-studies">Case studies</a> ·
+<a href="https://github.com/ChrisHorn-Dev/media-auth-api">Media Auth API</a> ·
 <a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a>
 </p>
 
@@ -17,126 +17,90 @@ Product-minded full-stack engineer building SaaS platforms, operational systems,
 
 <br>
 
-# Current focus
+## Featured work
 
-- **SiteOS** — construction execution intelligence platform (FastAPI, workers, dashboards, mobile)
-- **Production SaaS stabilization** — healthcare scheduling, client ops portals, integrations
-- **Public proof** — architecture case studies + interactive portfolio at [chrisos.dev](https://chrisos.dev)
+### [Physician Connection](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)
 
-<br>
+Healthcare SaaS for scheduling and coordination between pharma reps and physician practices. Private repo; [public case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md).
 
-# Featured work
+`Next.js` · `TypeScript` · `Drizzle` · `Better Auth` · `Cal.com` · `Neon` · `Vercel` · `Railway`
 
-## Physician Connection
-
-Multi-tenant healthcare SaaS for rep–practice appointment coordination, scheduling, and operational workflows.
-
-`Next.js` · `TypeScript` · `Drizzle ORM` · `Better Auth` · `Cal.com` · `PostgreSQL (Neon)` · `Vercel` · `Railway`
-
-**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/physician-connection.md)**
-
-Production hardening: Neon/Drizzle transaction fixes, auth boundaries, Cal.com stabilization, Oracle → Vercel/Railway migration.
+Recent work included fixing Neon/Drizzle transaction issues, tightening auth boundaries, and migrating hosting off Oracle.
 
 ---
 
-## SiteOS — Construction Intelligence Platform
+### SiteOS
 
-Full-stack platform for construction execution intelligence — field signals to executive dashboards.
+Construction dashboard system — field updates, project signals, executive views, mobile field app, Python backend with workers and ML hooks. **Private repo.** Public write-up planned.
 
-`FastAPI` · `Celery` · `PostgreSQL` · `TimescaleDB` · `Next.js` · `Expo` · `ML/CV` · `Claude API`
-
-**Private repo** · **Case study pending polish →** [draft](https://github.com/ChrisHorn-Dev/case-studies/blob/main/siteos.md)
-
-Related: `siteos-signal-engine` (county-level signal foundation).
+`FastAPI` · `Celery` · `PostgreSQL` · `Next.js` · `Expo`
 
 ---
 
-## Elite Touch Cleaning — Client & Operations Portal
+### [Elite Touch Cleaning](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)
 
-Client companion app + admin ops layer for commercial cleaning: typed requests, SOS path, Twilio/Resend notifications, HubSpot sync.
+Client portal for service requests, emergency/SOS messages, admin triage, and ops notifications. Separate internal proposal/PDF app in the same client ecosystem. **Private repos**; [case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md).
 
 `Next.js` · `Prisma` · `Twilio` · `Resend` · `HubSpot`
 
-**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/elite-touch-cleaning.md)**
+---
 
-Companion to **Elite Touch Proposal App** (internal scope-of-work + PDF generator, private repo).
+### Regen Profits Sales App
+
+Mobile-first sales PWA for reps and an admin view. Client project, **private repo**, staging deployment for review.
+
+`Next.js` · `Supabase` · `PWA`
 
 ---
 
-## Regen Profits Sales App
+### Remember Me
 
-Mobile-first sales tracking PWA for reps and admin oversight.
+Small consumer MVP — reminders, wishlists, events, and a gift draft flow without payments yet. **Private repo.**
 
-`Next.js` · `Supabase` · `PWA` · `Tailwind CSS`
-
-**Private repo** · **Case study draft →** [regen-profits-sales-app.md](https://github.com/ChrisHorn-Dev/case-studies/blob/main/regen-profits-sales-app.md) · Staging: [regen-profits-sales-app.vercel.app](https://regen-profits-sales-app.vercel.app)
+`Next.js` · `Supabase`
 
 ---
 
-## Remember Me
+### [Cape Fear Web Co](https://github.com/ChrisHorn-Dev/case-studies/blob/main/cape-fear-web-co.md)
 
-Relationship-driven gifting MVP — wishlists, reminders, events, Thinking of You drafts (Phase 1, honest scope).
+Studio site plus client delivery portal. [Live site](https://capefearweb.co) · [case study](https://github.com/ChrisHorn-Dev/case-studies/blob/main/cape-fear-web-co.md).
 
-`Next.js` · `Supabase` · `TypeScript`
-
-**Private repo** · **Case study draft →** [remember-me.md](https://github.com/ChrisHorn-Dev/case-studies/blob/main/remember-me.md)
+`Vite` · `React` · `Supabase` · `Vercel`
 
 ---
 
-## Cape Fear Web Co
+### [Media Authenticity API](https://github.com/ChrisHorn-Dev/media-auth-api)
 
-Studio site + Supabase client delivery portal for operational software engagements.
-
-`Vite` · `React` · `Supabase` · `Vercel` · Live: [capefearweb.co](https://capefearweb.co)
-
-**Private repo** · **[Case study →](https://github.com/ChrisHorn-Dev/case-studies/blob/main/cape-fear-web-co.md)**
-
----
-
-## Media Authenticity API
-
-Signed image authenticity API with detector-based analysis and verification endpoint.
+Public API — analyze an image, return a signed result, verify later that it wasn't tampered with.
 
 `Next.js` · `TypeScript` · `Hugging Face`
 
-**[Public repo →](https://github.com/ChrisHorn-Dev/media-auth-api)** · [Case study overview](https://github.com/ChrisHorn-Dev/case-studies/blob/main/media-auth-api.md)
-
 ---
 
-## ChrisOS
+### [ChrisOS](https://chrisos.dev)
 
-Desktop-style interactive portfolio — windowed project workspace, terminal, mobile shell.
+Interactive portfolio — desktop-style windows, project cards, mobile shell. [Live](https://chrisos.dev) · [repo](https://github.com/ChrisHorn-Dev/resume-os)
 
 `Next.js` · `Zustand` · `Framer Motion`
 
-**[Live →](https://chrisos.dev)** · **[Public repo →](https://github.com/ChrisHorn-Dev/resume-os)**
+<br>
+
+## Private code, public write-ups
+
+A lot of my work is in private or client repos. When I can't share code, I write case studies that explain the product, architecture, and tradeoffs instead.
+
+→ [Case studies repo](https://github.com/ChrisHorn-Dev/case-studies)
 
 <br>
 
-# Private work, public proof
+## Stack I use often
 
-A lot of my strongest work is **private or client-sensitive**, so I publish **architecture-focused case studies** that explain product decisions, system design, tradeoffs, and implementation details — without exposing confidential code or data.
-
-→ **[All case studies](https://github.com/ChrisHorn-Dev/case-studies)**
+`Next.js` · `React` · `TypeScript` · `Python/FastAPI` · `PostgreSQL` · `Prisma` · `Drizzle` · `Supabase` · `Vercel` · `Railway`
 
 <br>
 
-# Stack
+## Contact
 
-**Frontend:** Next.js · React · TypeScript · Tailwind CSS · Vite  
-**Backend:** FastAPI · Node.js · Celery · REST APIs  
-**Data:** PostgreSQL · Neon · Prisma · Drizzle ORM · Supabase  
-**Integrations:** Cal.com · Twilio · Resend · HubSpot · Stripe · Hugging Face  
-**Infra:** Vercel · Railway · Docker · Sentry  
-
-<br>
-
-# Connect
-
-Always happy to talk about SaaS systems, operational software, and product engineering.
-
-<p>
-<a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a> •
-<a href="https://chrisos.dev">ChrisOS</a> •
-<a href="https://github.com/ChrisHorn-Dev/case-studies">Case Studies</a>
-</p>
+<a href="https://linkedin.com/in/chris-horn-5b70ab369">LinkedIn</a> ·
+<a href="https://chrisos.dev">ChrisOS</a> ·
+<a href="https://github.com/ChrisHorn-Dev/case-studies">Case studies</a>
